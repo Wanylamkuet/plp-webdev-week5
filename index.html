@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpendWise | Personal Finance Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" aria-label="Primary Navigation">
+      <div class="brand">
+        <span class="brand-logo">$</span>
+        <span class="brand-name">SpendWise</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active">
+          <span class="nav-icon">📊</span>
+          <span>Overview</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">💳</span>
+          <span>Transactions</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🎯</span>
+          <span>Budgets</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">📈</span>
+          <span>Analytics</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p class="budget-period">Billing Cycle: Nov 2026</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-title">
+          <h1>Financial Overview</h1>
+          <p>Welcome back, Wany — here is your monthly breakdown.</p>
+        </div>
+
+        <div class="header-summary">
+          <div class="balance-pill">
+            <span class="label">Remaining Budget</span>
+            <span class="value">$1,420.00</span>
+          </div>
+          <div class="avatar" aria-label="User Profile">WL</div>
+        </div>
+      </header>
+
+      <!-- Main Dashboard Grid -->
+      <main class="content">
+        <section class="cards-grid" aria-label="Expense Categories">
+          <!-- Card 1: Rent -->
+          <article class="card" tabindex="0">
+            <div class="card-top">
+              <span class="card-icon">🏠</span>
+              <span class="card-badge badge-neutral">Fixed</span>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Rent & Housing</h2>
+              <p class="card-amount">$1,200.00</p>
+              <p class="card-meta">of $1,200.00 monthly limit</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 100%;"></div>
+            </div>
+          </article>
+
+          <!-- Card 2: Food -->
+          <article class="card" tabindex="0">
+            <div class="card-top">
+              <span class="card-icon">🥗</span>
+              <span class="card-badge badge-good">On Track</span>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Food & Groceries</h2>
+              <p class="card-amount">$385.50</p>
+              <p class="card-meta">of $550.00 monthly limit</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+          </article>
+
+          <!-- Card 3: Transport -->
+          <article class="card" tabindex="0">
+            <div class="card-top">
+              <span class="card-icon">🚌</span>
+              <span class="card-badge badge-good">On Track</span>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Transport</h2>
+              <p class="card-amount">$110.00</p>
+              <p class="card-meta">of $200.00 monthly limit</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 55%;"></div>
+            </div>
+          </article>
+
+          <!-- Card 4: Utilities -->
+          <article class="card" tabindex="0">
+            <div class="card-top">
+              <span class="card-icon">⚡</span>
+              <span class="card-badge badge-warning">88% Used</span>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Utilities & Internet</h2>
+              <p class="card-amount">$158.40</p>
+              <p class="card-meta">of $180.00 monthly limit</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 88%;"></div>
+            </div>
+          </article>
+
+          <!-- Card 5: Entertainment -->
+          <article class="card" tabindex="0">
+            <div class="card-top">
+              <span class="card-icon">🎬</span>
+              <span class="card-badge badge-good">On Track</span>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Entertainment</h2>
+              <p class="card-amount">$65.00</p>
+              <p class="card-meta">of $150.00 monthly limit</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 43%;"></div>
+            </div>
+          </article>
+
+          <!-- Card 6: Savings -->
+          <article class="card" tabindex="0">
+            <div class="card-top">
+              <span class="card-icon">💰</span>
+              <span class="card-badge badge-accent">Goal Met</span>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Emergency Savings</h2>
+              <p class="card-amount">$600.00</p>
+              <p class="card-meta">of $600.00 monthly goal</p>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill accent-fill" style="width: 100%;"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Link JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
